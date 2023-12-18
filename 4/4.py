@@ -20,7 +20,7 @@ def generate_qr_with_url(url):
 # Ruta para generar y mostrar el código QR que redirige a una URL
 @app.route('/')
 def generate_qr():
-    url = 'https://google.com'
+    url = 'https://nataliagamezbarea.github.io/EXAMEN/4/templates/index.html'
     qr_img = generate_qr_with_url(url)
     img_io = BytesIO()
     qr_img.save(img_io, 'PNG')
